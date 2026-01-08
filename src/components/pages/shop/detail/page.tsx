@@ -16,6 +16,7 @@ import { cn } from "cn-func";
 import { useSetAtom } from "jotai";
 import { loginModalOpenAtom } from "../../../common/modal/login/atom";
 import { useAuth } from "../../../auth/authProvider";
+import NaverMaps from "./section/NaverMaps";
 
 const ShopDetailPage = () => {
   const [searchParams] = useSearchParams();
@@ -174,6 +175,7 @@ const ShopDetailPage = () => {
               selectedPhonePlan={selectedPhonePlan}
               setSelectedPhonePlan={setSelectedPhonePlan}
             />
+            <NaverMaps />
             <BenefitCard />
             <ProcessStep />
             <PolicyAccordion />

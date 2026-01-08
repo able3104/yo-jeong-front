@@ -77,6 +77,7 @@ const PriceCalculator = ({
         >
           {plans.map((plan) => (
             <Select.Option
+              key={plan.name}
               name={plan.name}
               price={plan.price}
               description={plan.description}
